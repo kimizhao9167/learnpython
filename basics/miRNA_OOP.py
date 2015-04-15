@@ -1,9 +1,10 @@
 # jump into OOP in python, finally OOP!
 
-# define a Mirna class: data + methods 
+# define a Mirna class: attributes + methods 
 class Mirna:
 	def __init__(self,name,length,target = 0):
 	# initialize an instance of this class
+	# assign attributes to this instance
 	# define default values of target to zero
 	# similar to R
 		self.name = name
@@ -28,6 +29,7 @@ class Sirna(Mirna):
 	def add_conc(self,conc):
 		self.conc=conc
 	
+	# polymorphism
 	def normal_tar(self):
 		return(self.target/self.length+10)
 
